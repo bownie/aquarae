@@ -1,0 +1,7 @@
+a.nav-item.nav-link {
+    color: darkgrey;
+}
+
+a.nav-item.nav-link.active {
+    color: goldenrod;
+}
