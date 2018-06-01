@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatMenu } from '@angular/material';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,8 @@ import { MatMenu } from '@angular/material';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,
+              private router: Router) { }
 
   ngOnInit() {
   }

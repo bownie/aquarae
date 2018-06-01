@@ -5,12 +5,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MaterialModule } from '../material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule
   ],
   declarations: [LayoutComponent, HeaderComponent, FooterComponent],
   exports: [LayoutComponent]

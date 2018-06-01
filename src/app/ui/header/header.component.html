@@ -1,15 +1,22 @@
 <nav class="navbar navbar-light mb-5">
   <a class="navbar-brand" href="/"><img src="/assets/aquarae-logo.jpg" width="200"/></a>
   <div class="navbar-expand mr-auto">
-    <div class="navbar-nav">
+    <nav class="navbar-nav">
 <!--      
       <button mat-button [matMenuTriggerFor]="products">Products</button>
       <button mat-button (click)="navigate()"></button>
--->
       <a class="nav-item nav-link active" href="#">Irrigation</a>
       <a class="nav-item nav-link" href="#">About</a>
       <a class="nav-item nav-link" href="#">Contact</a>
-    </div>
+      -->
+      <a class="nav-item nav-link" routerLink="/agriculture" routerLinkActive="active">Agriculture Solutions</a>
+      <a class="nav-item nav-link" routerLink="/vineyard" routerLinkActive="active">Vineyard Solutions</a>
+<!--
+      <a class="nav-item nav-link" routerLink="/sensors" routerLinkActive="active">Sensors</a>
+      <a class="nav-item nav-link" routerLink="/systems" routerLinkActive="active">Management Systems</a>
+-->
+
+    </nav>
   </div>
   <!--
   <div class="navbar-nav">
