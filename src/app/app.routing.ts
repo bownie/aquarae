@@ -3,6 +3,7 @@ import { Routes, Resolve, RouterModule, CanDeactivate } from '@angular/router';
 import { IrrigationComponent } from './irrigation/irrigation.component';
 import { AgricultureComponent } from './agriculture/agriculture.component';
 import { VineyardComponent } from './vineyard/vineyard.component';
+import { HomeComponent } from './home/home.component';
 
 //import { Observable } from 'rxjs/Observable';
 //
@@ -11,6 +12,10 @@ import { VineyardComponent } from './vineyard/vineyard.component';
 // if they are out of date.  Need a way to invalidate these..
 //
 const appRoutes: Routes = [
+    {
+        path: 'home',
+        component: HomeComponent
+    },
     {
         path: 'irrigation',
         component: IrrigationComponent
@@ -26,7 +31,7 @@ const appRoutes: Routes = [
     // otherwise redirect to login screen
     //
     {
-        path: '**', redirectTo: 'login'
+        path: '**', redirectTo: 'home'
     }
 ];
 

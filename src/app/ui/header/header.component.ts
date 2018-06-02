@@ -15,4 +15,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  vineyard() {
+    console.log("vineyard()");
+    this.router.navigate(['vineyard']);
+  }
+
 }

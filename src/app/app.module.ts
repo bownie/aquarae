@@ -10,13 +10,15 @@ import { routing } from './app.routing';
 import { RouterModule, Routes } from '@angular/router';
 import { AgricultureComponent } from './agriculture/agriculture.component';
 import { VineyardComponent } from './vineyard/vineyard.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IrrigationComponent,
     AgricultureComponent,
-    VineyardComponent
+    VineyardComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
